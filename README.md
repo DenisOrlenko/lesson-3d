@@ -1,2 +1,2 @@
 # lesson-3d
-css description
+selectors and colors
