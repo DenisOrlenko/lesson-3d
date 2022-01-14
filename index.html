@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Modern-normalize - нормализирует встроенный стиль по умолчанию-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.css">
+
+  <!-- Встроенная таблица стилей - через Тег style в шапке проекта -->
+  <style>
+    p {
+      color: blue;
+    }
+  </style>
+
+  <!-- Применение стиля шрифта из Google.Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    .text.primary {
+      font-family: 'Tangerine', cursive;
+    }
+  </style>
+
+  <!-- Внешняя таблица стилей через ссылку на css-файл-->
+  <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+  <p>Lorem ipsum dolor sit amet.</p>
+
+  <!-- Селектор идентификатора - нельзя применять один идентификатор на 2 элемента
+(уникальность) -->
+  <p id="text">Lorem ipsum dolor sit.</p> -->
+  <p id="text">Lorem ipsum dolor sit.</p>
+
+  <!-- Встроенный стиль через добавление атрибута style в Тег -->
+  <p style="color: crimson;">Hello</p>
+
+  <!-- Селектор класса: два отдельных селектора пишутся без тире -->
+  <p class="text primary">Lorem ipsum dolor sit.</p>
+  <p class="text secondary">Lorem ipsum dolor sit.</p>
+
+  <!-- Селектор [атрибута+значения] -->
+  <a href="https://www.google.com/">ссылка</a>
+
+  <br>
+
+  <!-- Селектор атрибута -->
+  <a href="https://www.google.com/new" title="google">ссылка</a>
+
+  <!-- Селектор потомка -->
+  <ul class="list-first">
+    <li>
+      <a href="" class="link">ссылка</a>
+    </li>
+    <li>
+      <a href="" class="link">ссылка</a>
+    </li>
+  </ul>
+
+  <ul class="list-second">
+    <li>
+      <a href="" class="link">ссылка</a>
+    </li>
+    <li>
+      <a href="" class="link">ссылка</a>
+    </li>
+    <li>
+      <a href="new" class="link">ссылка</a>
+    </li>
+  </ul>
+
+  <!-- Селектор ребенка -->
+  <ul class="list-third">
+    <li>
+      <a href="" class="link">ссылка</a>
+      <p>Lorem, ipsum dolor.</p>
+    </li>
+    <li>
+      <a href="" class="link">ссылка</a>
+    </li>
+  </ul>
+
+
+  <button style="background: #fdeaa8;
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px;
+  font-size: 20px;">ok</button>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Eos sint nisi voluptas doloremque hic temporibus eum labore illum eveniet beatae,
+    quaerat illo magni sit accusamus explicabo!
+    Consequuntur ducimus repellat harum.</p>
+</body>
+
+</html>
