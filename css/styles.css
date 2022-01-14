@@ -1,0 +1,94 @@
+/* Универсальный селектор */
+* {
+  color: rgb(0, 38, 255);
+}
+
+/* Селектор элемента (тега) */
+p {
+  color: brown;
+}
+
+/* Селектор идентификатора */
+#text {
+  color: antiquewhite;
+}
+
+/* <!-- Селектор класса --> */
+.text {
+  font-size: 30px;
+}
+
+/* Два селектора класса */
+.text.secondary {
+  letter-spacing: 10px;
+}
+
+/* <!-- Селектор [атрибута+значения] --> */
+a[href="https://www.google.com/"]
+{
+  text-decoration: overline;
+}
+
+/* <!-- Селектор атрибута --> */
+a[title] {
+  text-transform: uppercase;
+}
+
+/* <!-- Селектор потомка - т.е. все линки которые находятся в линк ферст --> */
+.list-first .link {
+  text-decoration: none;
+}
+/* или */
+.list-second a {
+  font-size: 30px;
+}
+
+/* <!-- Селектор ребенка - т.е. сначала заходим в ребенка, а потом уже указываем элемент или атрибут--> */
+.list-third > li p {
+  text-shadow: 5px, 3px, 2px, #00ff00;
+}
+
+/* Элемент + селектор класса (для увеличения специфичности например) */
+a.link {
+  font-style: italic;
+}
+
+/* ********************************** */
+
+/* Псевдоклассы (состояния) */
+/* :hover эффект при наведении*/
+.link:hover {
+  color: black;
+}
+
+/* :focus эффукт при табуляции на клавиатуре или удержании ЛКМ*/
+.link:focus {
+  background: #ff0;
+}
+
+/* :visited эффект посещенного сайта*/
+.link:visited {
+  color: blueviolet;
+}
+
+/* :active эффект при нажатии на кнопку */
+button:active {
+  color: black;
+}
+
+/* Псевдоэлементы */
+/* ::first-letter - первая буква в абзаце */
+p::first-letter {
+  color: blue;
+  font-size: 20px;
+}
+
+/* ::first-line - офрмление первой линии (строки) */
+p::first-line {
+  color: #00ff00;
+}
+
+/* ::section -оформления диапазона текста, который выделяется курсором (цвет+фон) */
+p::selection {
+  color: darkorange;
+}
